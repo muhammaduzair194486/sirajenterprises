@@ -1,0 +1,914 @@
+/*=========================================================
+            Style CSS Mobile menu start
+
+=======================================================*/
+
+
+.navbar-header {
+    position: relative;
+}
+
+#mobile-nav-open-btn {
+    font-size: 30px;
+    color: #f4c613;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 12px;
+    /*Hide mobile menu*/
+    display: none;
+}
+
+
+#mobile-nav {
+    width: 100%;
+    height: 0%; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(255,255,255, 0.9);
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+    overflow-y: hidden;
+    
+    
+}
+
+#mobile-nav-close-btn {
+    font-size: 40px;
+    color: #212226;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    font-family: sans-serif;
+    top: 28px;
+    right: 13px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    
+    
+}
+
+#mobile-nav-content {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    top: 10%; 
+}
+
+#mobile-nav-content ul li {
+    margin-bottom: 20px;
+}
+
+#mobile-nav-content ul li a {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #212226;
+    text-transform: uppercase;
+    display: inline;
+     -webkit-transition: .3s;
+    transition: .3s;
+    
+}
+
+#mobile-nav a:hover,
+#mobile-nav a:focus,
+#mobile-nav-close-btn:hover,
+#mobile-nav-close-btn:focus
+{
+    color: #f4c613;
+    background: none;
+    
+}
+
+/*Scroll active scrolling spy bootstrap*/
+
+.white-nav-top #mobile-nav ul.nav > li.active > a {
+    color: #f4c613;
+    font-weight: 500;
+}
+
+
+/*=========================================================
+            Style CSS Mobile menu end
+
+=======================================================*/
+
+
+
+
+/*=========================================================
+            Bootstrap 3 Media Query
+
+=======================================================*/
+ /*Large Devices (Desktop & Laptops)*/
+
+@media (min-width: 1200px) and (max-width: 1299px) {
+    /*Navigation bar*/
+    .site-nav-wrapper {
+        padding: 0px 20px;
+    }
+    
+}
+
+
+
+/*Medium Devices (Landscape Tablets & Medium Desktops) */
+
+@media (min-width: 992px) and (max-width: 1199px){
+    
+    /*Navigation bar*/
+    .site-nav-wrapper {
+        padding: 0px;
+    }
+    
+    /*Vertical-Heading*/
+    
+    .vertical-heading h2 {
+        font-size: 29px;
+        
+    }
+    
+    /*About 01 section*/
+    #about-01 .content-box-lg  {
+        padding: 40px 20px;
+    }
+    
+    /*About 02 section*/
+    #about-02 .content-box-md {
+        padding: 40px 0px;
+    }
+    
+    /*Horizontal Heading*/
+   .horizontal-heading h2 {
+        font-size: 29px;
+       font-family: sans-serif;
+    }
+    
+    /*Services 01 section*/
+    #services-01 .content-box-lg .col-md-7 {
+        padding: 0px 20px 0 0;
+    }
+    
+    #services .content-box-lg {
+        padding: 20px;
+    }
+    
+    /*Services 02 section*/
+    #services-02 .content-box-md {
+        padding: 30px 0px;
+    }
+    
+
+    #services-tabs .tab-bg {
+        padding: 10px 20px 0px 0px;
+        min-height: 400px;
+            
+    }
+    
+    .service-tab .tab-bg p {
+        line-height: 20px;
+        padding: 0px 10px 0px 35px;
+        text-align: justify;
+    }
+    .service-tab .tab-bg h2 {
+        padding: 0px 10px 0px 35px;
+    }
+    
+    .service-tab .tab-bg h3 {
+        font-size: 28px;
+    }
+    
+    .service-tab .tab-bg .btn-yellow {
+        -webkit-transform: translateX(30px);
+        transform: translateX(30px);
+        width: 180px;
+        height: 45px;
+  
+    }
+    
+   
+}
+
+
+/*Small Devices (Portrait Tablets & Small Desktops) */
+
+@media (min-width: 768px) and (max-width: 991px){
+    
+     /*Navigation bar*/
+    .site-nav-wrapper {
+        padding: 0px;
+    }
+    
+     /*Home*/
+    
+    #home-heading h1 {
+        font-size: 41px;
+    }
+    
+    #home-text p {
+        font-size: 13px;
+    }
+    
+    /*home btn*/
+    .btn-generally {
+        padding: 8px 35px 8px 35px;
+        font-size: 10px;
+    }
+    
+    
+    /*Vertical-Heading*/
+    
+    .vertical-heading h2 {
+        font-size: 29px;
+        
+    }
+    
+     /*Horizontal Heading*/
+   .horizontal-heading h2 {
+        font-size: 29px;
+       font-family: sans-serif;
+    }
+    
+    /*Services 02*/
+    #tech-statement h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    
+    .r-tabs-accordion-title {
+         text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .r-tabs-accordion-title a {
+        font-family: sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+    
+    
+    /*Tabs Active state*/
+    .r-tabs-accordion-title.r-tabs-state-active a {
+    color: #f4c613;
+    font-weight: 700;
+    border-bottom: 3px solid #f4c613;
+    padding-bottom: 5px;
+    -webkit-transition: border-color 300ms linear;
+    transition: border-color 300ms linear;
+       
+}
+    
+    
+    /*Pricing*/
+    .pricing-table .price h2 {
+        margin: 0 0 0 6px;
+        font-size: 35px;
+    }
+    
+    /* Stats*/
+    .stats-item p {
+        line-height: 18px;
+    }
+    
+    /* Blog */
+    .blog-post .post-meta p {
+        line-height: 14px;
+    }
+    
+    
+    
+    ul.office-details li i {
+    font-size: 15px;
+    
+}
+    
+    ul.office-details li {
+        font-size: 12px;
+    }
+    
+
+    ul.office-details li {
+        margin-right: 15px;
+    }
+    
+    ul.office-details li i {
+        width: 25px;
+    }
+}
+
+
+
+/*Extra Small Devices (Landscap Phone & Portrait Tablets) */
+
+@media (max-width: 767px){
+    
+    /* Home Section */
+    #home-heading h1 {
+
+    font-size: 22px;
+
+}
+
+
+#home-text p {
+    font-size: 13px;
+    line-height: 18px;
+    margin: 8px 0px 30px 0px;
+}
+
+/*Button */
+
+.btn-generally {
+   padding: 8px 25px 8px 25px;
+    font-size: 10px;
+
+} 
+    
+    /* About 01 Section */
+    /*Large Content Box*/
+    .content-box-lg {
+        padding: 90px 0px;
+    }
+    
+    /*Vertical Heading*/
+    
+    .vertical-heading {
+        text-align: center;
+        
+    }
+    
+    .vertical-heading h5 {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        display: block;
+        position: static;
+        margin-bottom: 15px;
+        text-align: center;
+        
+    }
+    
+    .vertical-heading h2 {
+        font-size: 29px;
+        line-height: normal;
+        margin: 0px;
+    }
+    
+    #about-left {
+        margin-bottom: 50px;
+        padding: 0px;
+        
+    }
+    
+    #about-right {
+        text-align: center;
+    }
+    
+    /* About 01 Section */
+    
+    /*Medium Content Box*/
+    .content-box-md {
+      padding: 80px 0;   
+    }
+    
+    .about-item {
+        padding:55px 35px;
+        margin-bottom: 35px;
+    }
+    
+    .about-item i  {
+        font-size: 30px;
+    }
+    
+    .about-item h3 {
+        font-size: 18px; 
+    }
+    
+    /*Team Section*/
+    
+    #tean-left .vertical-heading {
+    min-height: 130px; 
+
+}
+    
+    .skill h4 {
+        font-size: 14px;
+        line-height: 35px;
+    }
+    
+    .skill {
+        padding: 20px;
+    }
+    
+    /*Services 02*/
+    #tech-statement h3 {
+        font-size: 20px;
+        line-height: 30px;
+      
+    }
+    
+    /*Services 01*/
+    .horizontal-heading {
+        margin-bottom: 40px;
+        text-align: center;
+        
+    }
+    
+    .horizontal-heading h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    #servic-01 img {
+        margin: 35px 0px;
+    }
+    
+    #services .content-box-lg {
+        padding: 20px 0px;
+    }
+    
+    .service .icon,
+    .service {
+        text-align: center;
+    }
+    
+    .service .icon {
+        font-size: 30px;
+    }
+    
+    .service h4 {
+        font-size: 18px;
+    }
+    
+    .service p {
+        font-size: 14px;
+    }
+    
+    /*----------------------------------------------------------------------------------------*/
+    
+    /*Service 02*/
+       .r-tabs-accordion-title {
+         text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .r-tabs-accordion-title a {
+        font-family: sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+    
+    
+    /*Tabs Active state*/
+    .r-tabs-accordion-title.r-tabs-state-active a {
+    color: #f4c613;
+    font-weight: 700;
+    border-bottom: 3px solid #f4c613;
+    padding-bottom: 5px;
+    -webkit-transition: border-color 300ms linear;
+    transition: border-color 300ms linear;
+       
+}
+
+   /*----------------------------------------------------------------------------------------*/    
+    
+    
+    .service-tab .tab-bg {
+        text-align: center;
+        padding: 40px 30px;
+    }
+    
+    .service-tab .tab-bg h2 {
+        font-size: 40px;
+    }
+    
+    .service-tab .tab-bg h3 {
+        font-size: 30px;
+    }
+    
+    #portfolio .vertical-heading {
+        text-align: center;
+        display: inline-table;
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+        padding-top: 0px;
+    }
+    
+    #portfolio .vertical-heading h5 {
+        text-align: center;
+    }
+    
+    #portfolio .vertical-heading h2 {
+        text-align: center;
+    }
+    
+    
+    #isotope-filters .btn {
+        padding: 0 30px;
+    }
+    
+    /* Portfolio */
+    #portfolio {
+        padding-bottom: 0px;
+    }
+    
+    #isotope-filter button {
+        padding-right: 15px;
+    }
+    
+    
+    
+    
+    /* Testimonial */
+
+    #testimonials {
+        padding-top: 45px;
+    }
+    
+    #testimonial-slider {
+        top: 0px;
+    }
+    
+    #testimonials .vertical-heading {
+        padding: 0px;
+    }
+    
+    .testimonial h3 {
+        font-size: 20px;
+    } 
+    
+    .testimonial .stars {
+        font-size: 16px;
+    }
+    
+    #testimonials {
+        padding-bottom: 0px;
+    }
+    
+    .author img {
+        width: 80px !important;    
+    }
+    
+    /* Pricing */
+    
+    #pricing {
+        padding-bottom: 50px;
+        padding-top: 0px;
+    }
+    
+    .pricing-table {
+        padding-bottom: 30px;
+    }
+    
+    
+    .pricing-table .price h2 {
+        font-size: 28px;
+        
+    }
+    
+    .pricing-table .price p {
+        font-size: 12px;
+        padding-right: 20px;
+    }
+    
+    /* Stats */
+    
+    #stats .vertical-heading {
+        text-align: center;
+        padding: 0px;
+    }
+    
+    #stats .stats-item {
+        margin-bottom: 20px;
+        padding: 25px 5px;
+    }
+    
+    #stats .stats-item i {
+     font-size: 30px;
+    }
+
+    #stats .stats-item h3 {
+        font-size: 24px;
+    }
+    
+    /* Blog */
+    
+    #blog-left {
+        margin-bottom: 30px;
+    }
+    
+    .blog-post {
+        margin-bottom: 25px;
+    }
+    
+    /* Contact */
+    
+    .contact-left p {
+        text-align: center;
+    }
+    
+    .contact-left {
+        text-align: center;
+    }
+    
+    .office {
+        margin-bottom: 40px;
+    }
+    
+    ul.office-details li {
+        display: block;
+        margin-top: 25px;
+    }
+    
+    ul.office-details li i {
+        width: auto;
+        display: block;
+        margin-bottom: 3px;
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px);
+       
+    }
+    
+    ul.social-list {
+        padding: 0px 0px 0px 10px;
+    }
+    
+    .social-list-item1 {
+        padding: 0px;
+        margin-bottom: 20px;
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+         
+    }
+    
+    
+    /*Mobile menu display*/
+    #mobile-nav-open-btn {
+        /*Show mobile menu open button*/
+     display: block;   
+    }
+    
+    .site-nav-wrapper,
+    .white-nav-top {
+        padding: 0;
+    }
+    
+    .navbar {
+        padding: 20px 0px;
+    }
+    
+}
+
+
+/*only for portfolio section*/
+@media (max-width: 550px){
+
+
+    #portfolio .vertical-heading {
+        text-align: center;
+        display: inline-table;
+        -webkit-transform: translateX(30%);
+        transform: translateX(30%);
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    
+    #isotope-filters .btn {
+        padding: 0 20px;
+    }
+    
+     #isotope-filters {
+        text-align: center;
+    }
+    
+    
+    #tech-statement .horizontal-heading {
+        line-height: 20px;
+        margin: 10px 25px 10px 25px;
+    }
+
+    #lamp-550 {
+        margin: 10px 50px;
+    }
+    
+}
+
+/*Extra Small Devices (Portrait Phone & smaller devices) */
+
+@media (max-width: 480px){
+
+    /*Navigation bar*/
+    .site-nav-wrapper {
+        padding: 0px;
+    }
+    
+     /*Home*/
+    
+    #home-heading h1 {
+        font-size: 18px;
+    }
+    
+    #home-text p {
+        font-size: 11px;
+        line-height: 16px; 
+        margin: 8px 10px 25px 10px;
+    }
+    
+   
+    
+    /*Vertical-Heading*/
+    
+    .vertical-heading h2 {
+        font-size: 22px;
+        
+    }
+    
+     /*Horizontal Heading*/
+   .horizontal-heading h2 {
+        font-size: 22px;
+       font-family: sans-serif;
+    }
+     
+    /*Statement*/
+    
+    #tech-statement h3 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    #tech-statement p {
+     font-size: 12px;  
+    }
+    
+    
+    /*Portfolio*/
+    
+        #portfolio .vertical-heading {
+        text-align: center;
+        display: inline-table;
+        -webkit-transform: translateX(30%);
+        transform: translateX(30%);
+        padding-top: 0px;
+        padding-bottom: 0px;    
+    }
+    
+    
+    #isotope-filters .btn {
+        padding: 0 12px;
+        font-size: 10px;
+    }
+    
+    #isotope-filters {
+        text-align: center;
+    }
+    
+    /*Testinomial*/
+    
+     .testimonial h3 {
+        font-size: 14px;
+         line-height: 18px; 
+        
+    } 
+    
+    .testimonial .stars {
+        font-size: 16px;
+       
+    }
+    
+}
+
+
+@media (max-width: 350px){
+
+     /*Statement*/
+    
+    #tech-statement h3 {
+        font-size: 12px;
+        line-height: 22px;
+        margin: 10px 25px 10px 25px;
+        text-align: center;
+    }
+    
+    #tech-statement p {
+     font-size: 12px;  
+    }
+    
+    
+    
+    
+      /*Testinomial*/
+    
+     .testimonial h3 {
+        font-size: 12px;
+         line-height: 18px; 
+        
+    } 
+    
+    .testimonial .stars {
+        font-size: 14px;
+       
+    }
+    
+}
+
+
+
+
+@media (max-width: 350px){
+
+     /*Statement*/
+    
+    #tech-statement h3 {
+        font-size: 12px;
+        line-height: 22px;
+        margin: 10px 25px 10px 25px;
+        text-align: center;
+    }
+    
+    #tech-statement p {
+     font-size: 12px;  
+    }
+    
+    
+    
+    
+      /*Testinomial*/
+    
+     .testimonial h3 {
+        font-size: 10px;
+         line-height: 18px; 
+        
+    } 
+    
+    .testimonial .stars {
+        font-size: 11px;
+       
+    }
+    
+    
+      #tech-statement .horizontal-heading {
+        line-height: 20px;
+        margin: 10px 25px 10px 25px;
+    }
+
+    #lamp-550 {
+        margin-right: 100px;
+    }
+    
+    
+    /*Portfolio*/
+    
+        #portfolio .vertical-heading {
+        text-align: center;
+        display: inline-table;
+        -webkit-transform: translateX(10%);
+        transform: translateX(10%);
+        padding-top: 0px;
+        padding-bottom: 0px;    
+    }
+    
+    
+    #isotope-filters .btn {
+        padding: 0 10px;
+        font-size: 9px;
+    }
+    
+    
+}
+
+@media (max-width: 300px){
+    
+    
+        /*Portfolio*/
+    
+        #portfolio .vertical-heading {
+        text-align: center;
+        display: inline-table;
+        -webkit-transform: translateX(-5%);
+        transform: translateX(-5%);
+        padding-top: 0px;
+        padding-bottom: 0px;    
+    }
+    
+    
+    #isotope-filters .btn {
+        padding: 0 5px;
+        font-size: 9px;
+    }
+    
+}
